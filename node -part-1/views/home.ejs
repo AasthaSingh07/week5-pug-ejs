@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <h2>Welcome to EJS Engine</h2>
+    <hr>
+    <div class="container-fluid">
+        <form action="#" method="post">
+            <label for="title">Title: </label>
+            <div class="input-group input-group-sm mb-2">
+                <input type="text" id="title" name="ntitle">
+            </div>
+            <label for="fname">FirstName: </label>
+            <div class="input-group input-group-sm mb-2">
+                <input type="text" id="fname" name="nfirstname">
+            </div>
+            <label for="lname">LastName: </label>
+            <div class="input-group input-group-sm mb-2">
+                <input type="text" id="lname" name="nlastname">
+            </div>
+            <label for="power">Power: </label>
+            <div class="input-group input-group-sm mb-2">
+                <input type="text" id="power" name="npower">
+            </div>
+            <label for="city">City: </label>
+            <div class="input-group input-group-sm mb-2">
+                <input type="text" id="city" name="ncity">
+            </div>
+            <button type ="submit" class="btn bg-primary">Submit</button>
+        </form>
+        <hr>
+        <% if (avengersData.avengers.length > 0) { %>
+            <ol class="list-group list-group-numbered">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">FirstName</th>
+                            <th scope="col">Lastname</th>
+                            <th scope="col">Power</th>
+                            <th scope="col">City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% avengersData.avengers.forEach(hero => { %>
+                            <tr>
+                                <td><%= hero.title %></td>
+                                <td><%= hero.firstname %></td>
+                                <td><%= hero.lastname %></td>
+                                <td><%= hero.power %></td>
+                                <td><%= hero.city %></td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </ol>
+        <% } %>
+    </div>
+</body>
+</html>
+    </div>
+
+    
+</body>
+</html>

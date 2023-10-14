@@ -1,0 +1,32 @@
+{
+  "avengers": [
+    {
+      "title": "Ironman",
+      "firstname": "Aastha",
+      "lastname": "Singh",
+      "city": "Haryaba",
+      "power": "10"
+    },
+    {
+      "title": "Black widow",
+      "firstname": "Natasha",
+      "lastname": "Dala",
+      "city": "Guwahati",
+      "power": "10"
+    },
+    {
+      "title": "Hulk",
+      "firstname": "tony",
+      "lastname": "stark",
+      "city": "new york",
+      "power": "8"
+    },
+    {
+      "title": "Hawkeye",
+      "firstname": "Chrish",
+      "lastname": "evans",
+      "city": "London",
+      "power": "30"
+    }
+  ]
+}
